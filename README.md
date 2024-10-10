@@ -119,7 +119,7 @@ This should start a development server with the React application that will inte
 
 An alternative way to test your API you can use the following curl commands. For all examples below you would need to replace:
 
-* {API-ID} - with you API's ID that is returned by the Serverless framework
+* {API-ID} - with you API's ID that is returned by the Serverless framework 
 * {JWT-token} - a JWT token from the web application
 
 ## Get all TODOs

@@ -3,7 +3,6 @@ import cors from '@middy/http-cors'
 import { getUserId } from '../auth/utils.mjs'
 import { getAllTodos } from '../../businessLogic/todo.mjs'
 export const handler = middy()
-  .use(httpErrorHandler())
   .use(
     cors({
       credentials: true
@@ -17,7 +16,9 @@ export const handler = middy()
 
     if (!todoList.length) {
       return {
-        statusCode: 400
+        statusCode: 400,
+        message: "Bad Request"
+        
       }
     }
 
